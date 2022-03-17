@@ -3,17 +3,27 @@
   "version": "1.0.0",
   "description": "API designed for sending and storagging data for an Android/Kotlin Project.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "start": "nodemon ./index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ipCoelho/api-for-libre.git"
   },
-  "author": "Israel P. Coelho",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/ipCoelho/api-for-libre/issues"
   },
-  "homepage": "https://github.com/ipCoelho/api-for-libre#readme"
+  "homepage": "https://github.com/ipCoelho/api-for-libre#readme",
+  "author": "Israel P. Coelho",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.17.0"
+  }
 }
